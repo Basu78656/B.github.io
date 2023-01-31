@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+}
+@media(max-width:900px){
+  body{
+    margin: 0;
+    width: 100vh;
+  }
+}
+/* top-back background */
+#top-container{
+    background-image: url("divi-gallery-hero-background.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  /* Nav-bar */
+   .nav-item{
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  
+  .d{ 
+    font-size: 2rem; /* Brand tag*/
+    color: white;
+    margin-left: 40px;
+    
+  }  
+  
+   
+  /* TOP-Content */
+  .content{
+    color: white;
+    text-align: center;
+    line-height: 2;
+    font-family: 'Cambo', serif;
+    margin-top: 10%;
+   position: sticky;
+  }
+
+  .content h1{
+   font-size: 6.5rem;
+  }
+  .content h4{
+    font-size: 2rem;
+  }
+  .content h3{
+    font-size: 1.5rem;
+  }
+
+/* Middele container */
+#About{
+  padding: 100px;
+}
+@media screen and (max-width:900px) {
+  #About{
+    margin: 0;
+    padding: 0;
+    padding-top:10px ;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* Service */
+#service{
+  background-color:#8c008c;
+  padding: 100px;
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+#service h1{
+  color: white;
+  line-height: 2;
+  font-size: 4rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#service p{
+  font-size: 1rem;
+  font-family: 'Mukta', sans-serif;
+}
+
+
+
+.s-img{
+  height: 40%;
+  width: 20%;
+  border-radius: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+  
+
+
+/* Find out more */
+.fom-container{
+  background-color: #8c008c;
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom:20% ;
+}
+.item h1{
+ line-height: 2;
+ color: white;
+ font-size: 3.5rem;
+ font-family: 'Ubuntu', sans-serif;
+}
+
+.item1{
+  grid-column-start: 2;
+  grid-row-end: 3;
+}
+.fom-button{
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.fom-button::before{
+  content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+.fom-button:active:after {
+  background: transparent;
+}
+
+.fom-button:hover:before {
+  opacity: 1;
+}
+
+.fom-button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+  
+  .ca-button{
+    background: black;
+    background-image: -webkit-linear-gradient(top, black, black);
+    background-image: -moz-linear-gradient(top, black, black);
+    background-image: -ms-linear-gradient(top, black, black);
+    background-image: -o-linear-gradient(top, black, black);
+    background-image: linear-gradient(to bottom, black, black);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Georgia;
+    color: white;
+    font-size: 22px;
+    padding: 8px 18px 8px 18px;
+    text-decoration: none;
+    margin-left:15px ;
+    font-family:'Cambo', serif;
+    margin-top: 18px;
+  }
+  .ca-button:hover{
+    background: #033c70;
+    text-decoration: none;
+  }
+
+  
+/* FOOTER*/
+.footer-1{
+ color: white;
+  background-color:#8c008c;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  line-height: 2;
+}
+.bts{
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.footer-1 p{
+  margin-top: 10px
+}
+
+
